@@ -32,6 +32,7 @@ function welcomeMsg(name) {
   return "Welcome " + name;
 }
 console.log(welcomeMsg("Jane"));
+console.log(welcomeMsg("Marc"));
 
 // Gross Price Function
 function calcGrossPrice(netPrice, taxRate) {
@@ -48,3 +49,24 @@ function addPositive(nmbr1, nmbr2) {
 console.log(addPositive(2, 3));
 console.log(addPositive(3, -5));
 console.log(addPositive(-1, -8));
+
+// Coding Task: Variables
+// Spot the errors and fix them
+const userName = "Brad";
+
+function getUserNameLength(userName) {
+  return userName.length;
+}
+
+console.log(getUserNameLength(userName) >= 4);
+
+// isString function
+let myVar;
+const isString = function (myVar) {
+  return typeof myVar == "string";
+};
+console.log(isString("Hello"));
+console.log(isString(3));
+console.log(isString(undefined));
+console.log(isString(""));
+console.log(isString("John" + "Doe"));
